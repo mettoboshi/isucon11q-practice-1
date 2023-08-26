@@ -4,3 +4,5 @@
 !/webapp/**/*
 !/isucon-tools/
 !/isucon-tools/**/*
+!/schemas/
+!/schemas/**/*
