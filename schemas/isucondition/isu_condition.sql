@@ -6,5 +6,7 @@ CREATE TABLE `isu_condition` (
   `condition` varchar(255) NOT NULL,
   `message` varchar(255) NOT NULL,
   `created_at` datetime(6) DEFAULT current_timestamp(6),
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  INDEX `idx_jia_isu_uuid` (`jia_isu_uuid`),
+  INDEX `idx_timestamp` (`timestamp`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
